@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Output to Browser</title>
+        
+        <script>
+           window.onload=function()
+           {
+              document.getElementById('myButton').addEventListener('click', respond);
+           }
+           
+           function respond (e)
+            {
+                 document.getElementById('one').innerHTML += "<h1>Welome to my world</h1>";
+               document.getElementById('two').innerHTML += "Javascript speacialist course";
+            }
+        </script>
+        
+    </head>
+    <body>
+        <div id="one">This is div one</div>
+        <div id="two">This is div two</div>
+        <button id="myButton">Press me</button>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>if statements</title>
+       
+        <script>
+           window.onload=function()
+           {
+               var age = 18;
+               var citizen = true;
+
+               if(age == 18)
+                  {
+                    document.getElementById('result').innerHTML="<h1>You need to register to vote</h1>";
+                  }
+               
+               if(age >= 18 && citizen == true)
+                   {
+                       document.getElementById('result').innerHTML="<h1>You may legally vote</h1>";
+                   }
+
+                var age2 = 17;
+                var parentPresent = true;
+
+                if(age2 >= 17 || parentPresent==true)
+                  {
+                      document.getElementById('result').innerHTML += "<p>You may also see the movie</p>"
+                  }
+           }
+        </script>
+        
+    </head>
+    <body>
+       <div id="result"></div>
+    </body>
+</html>
